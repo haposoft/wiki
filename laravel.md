@@ -23,4 +23,4 @@
 * Tìm hiểu cách config Multiple Authentication trong Laravel
 
 ## Chapter 3: 
-* Gửi email trong Laravel dùng API
+* [Gửi email trong Laravel dùng API](./laravel/laravel-with-sendgrid.md)
