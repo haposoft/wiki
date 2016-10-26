@@ -1,22 +1,25 @@
-## Thiết lập môi trường: composer, php, mysql
+# Thiết lập môi trường: composer, php, mysql
+
+##I. COMPOSER. 
 
 Trước khi Composer ra đời, chúng ta thường khó chịu với hàng tá các thư viện của bên thứ ba cần phải quản lý, rất khó khăn để cập nhật và còn lại các khâu cài đặt lằng quằng. Đó là quá khứ thôi, sự ra đời của Composer đã làm thay đổi hoàn toàn mọi thứ rồi. Trong bài viết này chúng ta sẽ tìm hiểu về Composer thực chất nó là gì.
 
+
 ### 1. Composer là gì ?
 
-**Composer** là một công cụ quản lý các thư viện trong PHP (Dependency Management), công cụ này giúp ta tiết kiệm khá nhiều thời gian với các gói thư việ cần thiết mà project của bạn cần sử dụng, bạn chỉ cần khai báo nó, composer sẽ tự động tải code của các thư viện về thông qua một server cộng đồng.
+**Composer** là một công cụ quản lý các thư viện trong PHP (Dependency Management), công cụ này giúp ta tiết kiệm khá nhiều thời gian với các gói thư viện cần thiết mà project của bạn cần sử dụng, bạn chỉ cần khai báo nó, composer sẽ tự động tải code của các thư viện về thông qua một server cộng đồng.
 
 **Composer** giúp ta quản lý thư viện một cách chuyên biệt từng project không giống như APT hay YUM (linux) dùng chung mà nó tương tự như npm của NodeJS, tức là ví dụ bạn có PROJECT A và PROJECT B thì nếu bạn cần thư viện LIB X thì khi cài đặt thư viện LIB X sẽ được thêm ngay vào trong từng thư mục PROJECT A và PROJECT B.
 
 **Composer** là một mã nguồn mở (OpenSource) nên được cộng đồng hỗ trợ rất nhiều, bạn có thể tham gia phát triển, phát triển lại từ trang [Github chính thức của Composer.](https://github.com/composer/composer)
 
+
 ### 2. Tại sao lại cần Composer ?
        
 Như mình đã nói ở trên **Composer** ra đời để giải quyết các vấn đề khó khăn như dung lượng project sẽ lơn hơn, việc cập nhật cũng như chèn vào project rất phức tạp và phiền phức. Với **composer**, bạn sẽ cần khai báo tên và version của các thư viện mà bạn có sử dụng mà không cần phải tự tay chép code của nó vào project, **composer** sẽ tự động tìm và tải thư viện mà bạn cần trên Server, nếu trong thư viện đó có dùng các thư viện khác thì nó cũng sẽ tải các thư viện khác về, nó đệ quy cho đến khi tải đủ các thư viện, thật tuyệt vời phải không nào.
 
->This tutorial will explain how to install and get started with Composer on an Ubuntu 16.04 system.
 
-### 3. Hướng dẫn cài đặt Composer
+### 3. Hướng dẫn cài đặt Composer (ubuntu 16.04)
 
 Trước khi cài đặt Composer, chúng ta phải chắc rằng phải có các thành phần phụ thuộc.
 
@@ -74,3 +77,39 @@ Options:
 ```
 Điều này có nghĩa Composer đã được cài đặt thành công vào hệ thống của bạn.
 
+## II. PHP & MYSQL
+
+### 1. Cài đặt MySQL
+
+chạy lệnh (trên ubuntu 16.04):
+```
+$ sudo apt-get update
+$ sudo apt-get install mysql-server
+```
+
+Trong khi cài đặt, máy chủ của bạn sẽ yêu cầu bạn chọn và xác nhận mật khẩu cho "root" user MySQL. Đây là một tài khoản quản trị trong MySQL đặc quyền. Hãy nghĩ về nó như là tương tự như các tài khoản gốc cho các máy chủ Hãy chắc chắn rằng đây là mật khẩu mạnh mẽ, duy nhất, và không để trống.
+
+### 2. Cài đặt PHP
+
+chạy lệnh (trên ubuntu 16.04):
+```
+$ sudo apt-get update
+$ sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+```
+**Kiểm tra lại xử lý PHP trên máy chủ web của bạn**
+
+Sau khi bạn cài đặt Apache hoặc Ngix thì sẽ có một thư mục thực thi khi các bạn vào `localhost`. Với Ubuntu, thư mục này nằm ở `/var/www/html/`. Chúng ta có thể tạo ra các tập tin tại vị trí đó bằng cách gõ:
+```
+$ sudo nano /var/www/html/info.php
+```
+bạn viết vào đó:
+```
+<?php phpinfo(); ?>
+```
+Sau khi hoàn thành hãy lưu và đóng lại.
+Bây giờ bạn mở trình duyệt lên và gõ đưỡng dẫn:
+```
+http://localhost/info.php
+```
+nếu kết quả tuơng tự như dưới là thành công: 
+![Image](./img/small_php_info.png)
