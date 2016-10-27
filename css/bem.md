@@ -3,9 +3,9 @@
 
 ##Cách đặt tên cho các thành phần: .[block-name]__[element_name]--[modifier-name]
 	
- 1. Block được coi là thành phần lớn nhất: .btn {} .
- 2. Element là thành phần con của block và đằng trước tên của nó có thêm 2 dầu gạch dưới: .btn__price {} .
- 3. Modifier là thành phần thay đổi style của Block hoặc Element.Đằng trước tên của nó có thêm 2 dấu gạch ngang: .btn--orange {}, .btn__price--big .
+1. Block được coi là thành phần lớn nhất: .btn {} .
+2. Element là thành phần con của block và đằng trước tên của nó có thêm 2 dầu gạch dưới: .btn__price {} .
+3. Modifier là thành phần thay đổi style của Block hoặc Element.Đằng trước tên của nó có thêm 2 dấu gạch ngang: .btn--orange {}, .btn__price--big .
 
 ````html
 /* Thành phần Block, nó là class cho một nút bấm */
