@@ -2,10 +2,10 @@
 
 ##2 Nguyên tắc cơ bản khi sử dụng OOCSS:
 
-1. Tách biệt giữa cấu trúc và giao diện:
- 1. không viết các thuộc tính liên quan tới cấu trúc (position, float, margin, padding….), giao diện(background, border, color…) vào 1 class.
- 2. Lên kế hoạch trước khi viết mã CSS cho 1 trang: Viết class riêng cho các yếu tố có tính chất lặp lại để có thể  tái sử dụng lại.
- 3. VD:
+###Tách biệt giữa cấu trúc và giao diện:
+1. không viết các thuộc tính liên quan tới cấu trúc (position, float, margin, padding….), giao diện(background, border, color…) vào 1 class.
+2. Lên kế hoạch trước khi viết mã CSS cho 1 trang: Viết class riêng cho các yếu tố có tính chất lặp lại để có thể  tái sử dụng lại.
+3. VD:
 ```
 css.box1 {
   width: 25%;
@@ -37,7 +37,7 @@ Sau đó sử dụng CSS như sau:
 .box1 { background: red }
 .box2 { background: blue }
 ```
-2. Tách biệt giữa container(phần chưa nội dung) và content(nội dung):
+###Tách biệt giữa container(phần chứa nội dung) và content(nội dung):
  Giả sử bạn định dạng style như này cho thẻ h3 ở sidebar:
 ```
  #sidebar h3 {
