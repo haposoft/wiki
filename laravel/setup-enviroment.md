@@ -19,9 +19,11 @@ chạy lệnh (trên ubuntu 16.04):
 $ sudo apt-get update
 $ sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
 ```
-**Kiểm tra lại xử lý PHP trên máy chủ web của bạn**
+**Kiểm tra lại xử lý PHP trên máy của bạn**
 
-Sau khi bạn cài đặt Apache hoặc Ngix thì sẽ có một thư mục thực thi khi các bạn vào `localhost`. Với Ubuntu, thư mục này nằm ở `/var/www/html/`. Chúng ta có thể tạo ra các tập tin tại vị trí đó bằng cách gõ:
+Bạn có thể kiểm tra PHP đã được cài đặt hay chưa bằng Terminal bằng cách gõ lệnh `php -v`. Sẽ trả kết quả là thông tin phiên bản PHP hiện tại của bạn.
+
+**Ngoài ra**: Sau khi bạn cài đặt Apache hoặc Ngix thì sẽ có một thư mục thực thi khi các bạn vào `localhost`. Với Ubuntu, thư mục này nằm ở `/var/www/html/`. Chúng ta có thể tạo ra các tập tin tại vị trí đó bằng cách gõ:
 ```
 $ sudo nano /var/www/html/info.php
 ```
@@ -36,8 +38,6 @@ http://localhost/info.php
 ```
 nếu kết quả tuơng tự như dưới là thành công: 
 ![Image](./img/small_php_info.png)
-
-**Ngoài ra**: bạn có thể kiểm tra PHP đã được cài đặt hay chưa bằng Terminal bằng cách gõ lệnh `php -v`. Sẽ trả kết quả là thông tin phiên bản PHP hiện tại của bạn.
 
 ## II. COMPOSER. 
 
