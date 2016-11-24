@@ -36,7 +36,7 @@ Hàm này phải có khả năng để thao thác ít nhất hai tham số (erro
 
 **Cú pháp**
 ```
-error_function(error_level,error_message, error_file,error_line,error_context);
+error_function(error_level, error_message, error_file, error_line, error_context);
 ```
 Bảng dưới là chi tiết về các tham số trên:
 
@@ -73,7 +73,7 @@ int error_reporting ( [int $level] )
 Dưới đây là cách bạn có thể tạo một hàm xử lý lỗi trong PHP:
 ```php
 <?php
-   function handleError($errno, $errstr,$error_file,$error_line)
+   function handleError($errno, $errstr, $error_file, $error_line)
    {
       echo "<b>Xảy ra lỗi:</b> [$errno] $errstr - $error_file:$error_line";
       echo "<br />";
@@ -88,7 +88,7 @@ có sẵn trong PHP. Bây giờ kiểm trả lại ví dụ trên bằng việc 
 <?php
    error_reporting( E_ERROR );
    
-   function handleError($errno, $errstr,$error_file,$error_line)
+   function handleError($errno, $errstr, $error_file, $error_line)
    {
       echo "<b>Xảy ra lỗi:</b> [$errno] $errstr - $error_file:$error_line";
       echo "<br />";

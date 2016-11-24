@@ -12,7 +12,7 @@ Khi bạn cần kiểm tra một class nào đó có tồn tại hay không thì
 ```
 Hàm `class_exists()` trả về TRUE nếu MyClass là một lớp đã được định nghĩa, nếu không là  sẽ trả về FALSE.
 ### 3.1.2 Tìm các class đã được khai báo trong script hiện tại.
-Trong một số trường hợp bạn cần kiểm tra xem class nào đó được nạp chưa. Bạn có thể sử dụng hàm get_declared_classes().
+Trong một số trường hợp bạn cần kiểm tra xem class nào đó được định nghĩa chưa. Bạn có thể sử dụng hàm get_declared_classes().
 Hàm get_declared_classes() trả về một mảng tên của các lớp đã được khai báo trong script hiện tại.
 ```php
 <?php
@@ -44,12 +44,12 @@ Ví dụ:
        // tạo một đối tượng mới
        $WF = new HoangBK();
        
-       if (is_a($WF, 'HoangBK')) {
-          echo "\$WF vẫn là HoangBK";
+       if (is_a($wf, 'HoangBK')) {
+          echo "\$wf vẫn là HoangBK";
        }
 ?>
 ```
-Output: `$WF vẫn là HoangBK`
+Output: `$wf vẫn là HoangBK`
 
 ### 3.1.5 Tìm tên các class
 Trong ví dụ trước chúng ta đã kiểm tra được các đối tượng có thuộc một class mà ta biết trước không. Nếu bạn muốn biết
@@ -65,7 +65,10 @@ tên của class của đối tượng thì phải làm sao? bạn đừng lo l�
 Kết quả trả về là `ChildClass` (dĩ nhiên rồi). Tuy nhiên hàm get_class() lại có 2 cách sử dụng đó là sử dụng bên trong
 lớp và bên ngoài lớp.
 
-Ví dụ:
+Nếu sử dụng bên ngoài lớp thì đối số của hàm sẽ là đối tượng cần lấy thông tin(getClass1() ở ví dụ dưới).
+
+Nếu sử dụng bên trong lớp thì hàm có thể không cần đối số khi này hàm sẽ trả về tên lớp chứa nó, trường hợp nếu hàm sử dụng $this làm đối số thì hàm sẽ trả về tên lớp ở đối tượng nào gọi nó ví dụ ta gọi nó ở các lớp kế thừa thì hàm sẽ trả về tên lớp kế thừa (getClass2() ở ví dụ dưới). Xem ví dụ sau để hiểu rõ điều này:
+
 ```php
 <?php
     class ParentClass{
@@ -83,4 +86,5 @@ Ví dụ:
     echo $cc->getClass2(); // Output: ParentClass
 ?>
 ```
+
 
