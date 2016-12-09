@@ -54,10 +54,10 @@ Sửa lại cho dúng repo của mình.
 #### 3. After deploy
 ```
 task('reload:php-fpm', function () {
-    run('sudo /usr/sbin/service php5-fpm reload');
+    run('sudo /usr/sbin/service php7.0-fpm reload');
 });
 
 after('deploy', 'reload:php-fpm');
 ```
-đoạn này để sau khi deploy server sẽ `reload:php-fpm` thì code mới chạy được nhé. 
+đoạn này để sau khi deploy server sẽ `reload:php-fpm`. Nếu dùng phiên bản khác `php7.0-fpm` thì thay cho phù hợp.
 ngoài ra bạn có thể config thêm khi deploy thì bạn config thêm ở `MyProject/deployer/deployer/laravel.php`
