@@ -39,7 +39,7 @@ ta khai báo như function `tils` và `tags` như bên dưới:
   ```
 
 
-Đối với many to many relation (n-n), Laravel thường mặc định bảng lưu lại quan hệ theo thứ tự alphabe.
+Đối với many to many relation (n-n), Laravel thường mặc định bảng lưu lại quan hệ theo thứ tự alphabet(alphabetical order).
 Ví dụ bảng `tils` và `tags` có quen hệ n-n với nhau thì bảng lưu quan hệ giữa chúng sẽ là `tag_til` 
 chứ không phải là `til_tag`, nên đặt tên theo rule của Laravel sẽ ít cần config hơn.
 
