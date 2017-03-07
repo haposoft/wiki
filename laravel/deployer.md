@@ -9,7 +9,7 @@ cd vào thư mục project của bạn và bắt đầu chạy 4 dòng lệnh sa
 ```
 curl -LO https://deployer.org/deployer.phar
 mv deployer.phar /usr/local/bin/dep
-chmod +x /usr/local/bin/depsau
+chmod +x /usr/local/bin/dep
 composer require deployer/deployer
 
 ```
