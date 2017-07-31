@@ -1,9 +1,8 @@
 # hapo-wiki
 
 Repo lưu lại kinh nghiệm, kiến thức ở Hapo. 
-(Hiện tại chưa mua được organization plan nên để tạm trong private repo của @chungth) 
 
-##Mục lục
+## Mục lục
 1. Các rule chung
 2. Quy trình làm việc
 3. [Cơ bản về PHP](php.md)
@@ -13,3 +12,4 @@ Repo lưu lại kinh nghiệm, kiến thức ở Hapo.
 6. Các mục khác
 
 Mỗi chủ đề sẽ được chia thành các folder riêng, trong đó sẽ chứa các file markdown ghi chi tiết cho từng chủ đề
+Các chủ đề sẽ được yêu cầu theo dạng [Issues](https://github.com/haposoft/wiki/issues), tự assign vào issues nếu bạn muốn contribute cho phần đó để tránh bị conflict với các thành viên khác. 
