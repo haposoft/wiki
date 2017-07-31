@@ -14,7 +14,7 @@
 * Tìm hiểu Eloquent Model trong Laravel.
 * Viết 1 chức năng đơn giản dùng đủ 3 thành phần: Model, View, Controller 
 * Validation trong Laravel: validation method, Form Request, Validation Service
-* Laravel Eloquent relations. 
+* [Laravel Eloquent relations](./laravel/eloquent_relation.md). 
 * Sự khác biệt giữa Eloquent method và Query Engine.
 * [Testing trong laravel](./laravel/laravel-testing.md)
 ## Chapter 2: Authenticate & Middleware
