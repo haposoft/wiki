@@ -16,7 +16,7 @@
 * Validation trong Laravel: validation method, Form Request, Validation Service
 * [Laravel Eloquent relations](./laravel/eloquent_relation.md). 
 * Sự khác biệt giữa Eloquent method và Query Engine.
-
+* [Testing trong laravel](./laravel/laravel-testing.md)
 ## Chapter 2: Authenticate & Middleware
 * Sử dụng chứ năng authenticate của Laravel 
 * Tìm hiểu về middleware trong Laravel
