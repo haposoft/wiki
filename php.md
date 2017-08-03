@@ -1,10 +1,13 @@
 # Object Oriented Programming with PHP5
+
 ## [Chapter 1: OOP và lập trình thủ tục](./PHP/chapter1-2.md)
 
 * [Ưu điểm của OOP](./PHP/chapter1-2.md#1Ưu-điểm-của-oop)
 * [Một số thuật ngữ cơ bản của OOP](./PHP/chapter1-2.md#3một-số-thuật-ngữ-cơ-bản-của-oop)
 * [Quy tắc viết code](./PHP/chapter1-2.md#4quy-tắc-viết-code)
+
 ## [Chapter 2: OOP](./PHP/chapter1-2.md#chương-2-oop)
+
 * [Bắt đầu với đối tượng](./PHP/chapter1-2.md#1bắt-đầu-với-đối-tượng)
 * [Truy cập thuộc tính và phương thức trong lớp](./PHP/chapter1-2.md#2truy-cập-thuộc-tính-và-phương-thức-trong-lớp)
 * [Sử dụng đối tượng](./PHP/chapter1-2.md#3sử-dụng-đối-tượng)
