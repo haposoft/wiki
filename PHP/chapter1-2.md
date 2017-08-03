@@ -8,7 +8,7 @@
 
 ### 2.Bóc tách đối tượng
 
-### 3.Một số thuật ngữ cơ bản của OO
+### 3.Một số thuật ngữ cơ bản của OOP
  + Class(lớp): là khuôn mẫu của đối tượng.
  + Property(thuộc tính): 1 số thông tin trong lớp. Khác các ngôn ngữ khác như C, Java..., PHP không kiểm tra kiểu dữ liệu của biến.
  + Method(phương thức): là function trong class.
