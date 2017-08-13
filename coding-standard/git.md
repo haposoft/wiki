@@ -38,4 +38,7 @@ Tương tự như mục 2. Kết thúc buổi làm việc. Bạn cần gửi pul
 
 ### Lưu ý:
 
-Khi gửi pull-request, nhớ merge từ develop vào branch bạn muốn gửi pull-request hoặc rebase để cập nhật code mới nhất từ develop, để giảm thiểu việc khi bạn gửi pull-request lên thì gặp conflict với develop branch mà thành viên khác phải nhắc bạn giải quyết conflict gây tốn thời gian cho các member khác.
+1. Trước khi gửi pull-request, nhớ merge từ develop vào branch bạn muốn gửi pull-request hoặc rebase để cập nhật code mới nhất từ develop, để giảm thiểu việc khi bạn gửi pull-request lên thì gặp conflict với develop branch mà thành viên khác phải nhắc bạn giải quyết conflict gây tốn thời gian cho các member khác.
+2. Với một số tình huống, khi việc review code trong team diễn ra khá lâu, mà bạn cần làm một task có chứa nội dung bị phụ thuộc bởi 1 pull request chưa được merge thì có thể checkout từ branch của pull request phụ thuộc đó, tiếp tục làm và gửi pull request. Lưu ý khi gửi pull request có commit của pull request trước đó chưa merge vào develop hoặc master thì cần comment trong description của pull request như ví dụ dưới đây.
+
+![dependence PR](/../img/dependence_pr.png)
