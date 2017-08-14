@@ -1,7 +1,5 @@
 # Coding Standard at Haposoft 
 
-1. [Git & Git Flow](coding-standard/git.md)
-
 ## HTML&CSS
 6. [HTML&CSS coding convention](coding-standard/html-css.md)
 7. [Twitter Bootstrap](coding-standard/twitter-bootstrap.md)
