@@ -4,7 +4,7 @@ Repo lưu lại kinh nghiệm, kiến thức ở Hapo.
 
 ## Mục lục
 1. [Coding Standard](coding-standard.md) 
-2. [Cơ bản về Git](php.md)
+2. [Cơ bản về Git](git.md)
 2. [Cơ bản về PHP](php.md)
 3. [Cơ bản về Laravel](laravel.md) 
 4. [Cơ bản về HTML&CSS](css.md)
