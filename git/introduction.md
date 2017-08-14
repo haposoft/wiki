@@ -1,5 +1,5 @@
-#Git và Github là gì ? Tại sao nên sử dụng ?
-##Git là gì ?
+# Git và Github là gì ? Tại sao nên sử dụng ?
+## Git là gì ?
 Git là tên gọi của một Hệ thống quản lý phiên bản phân tán (Distributed Version Control System – DVCS),
 theo wiki thì Git là phần mềm quản lý mã nguồn phân tán được phát triển bởi [Linus Torvalds](https://vi.wikipedia.org/wiki/Linus_Torvalds) 
 vào năm 2005, ban đầu dành cho việc phát triển [nhân Linux](https://vi.wikipedia.org/wiki/H%E1%BA%A1t_nh%C3%A2n_Linux). 
@@ -11,7 +11,7 @@ cũng như các thành viên khác trong team. Cơ chế lưu trữ phiên bản
 (snapshot) tương ứng với mỗi tập tin và thư mục sau khi commit, 
 từ đó nó có thể cho phép chúng ta revert lại một ảnh chụp/phiên bản nào đó. 
 Đây cũng chính là điểm mạnh của Git so với các DVCS khác. Git  không “lưu cứng” dữ liệu mà sẽ chỉ lưu dưới dạng ảnh chụp.
-##Github là gì ?
+## Github là gì ?
 Theo định nghĩa của wiki thì [GitHub](https://github.com/) là một dịch vụ cung cấp kho lưu trữ mã nguồn Git dựa trên nền web cho các dự án phát triển phần mềm. 
 GitHub cung cấp cả phiên bản trả tiền lẫn miễn phí cho các tài khoản. 
 Các dự án mã nguồn mở sẽ được cung cấp kho lưu trữ miễn phí. 
@@ -21,7 +21,7 @@ Giữa Git và Github, một số bạn có thể bị hiểu nhầm, Git là t�
 còn Github là 1 một dịch vụ cung cấp kho lưu trữ mã nguồn Git. Và Git thì có thể làm việc với bất kì máy chủ Linux nào.  
 GitHub cung cấp chức năng social networking như là feeds, followers và network graph 
 để các dev có thể học hỏi kinh nghiệm làm việc thông qua lịch sử mỗi lần commit.
-##Tại sao nên sử dụng Git
+## Tại sao nên sử dụng Git
 Có rất nhiều lợi ích khi chúng ta sử dựng Git :
 1. Git hoạt động theo mô hình Local và Remote repositories: Bạn có thể làm mọi thao tác trên local repository trên máy tính. 
 Sau khi hoàn thành, đẩy code lên Remote repository để các thành viên trong team có thể review và lấy code của bạn về.
