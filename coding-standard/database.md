@@ -5,13 +5,13 @@
 Ví dụ : `name`, `age`.
 - Sử dụng dấu `_` khi nối các từ, điển hình như **[snake case](https://en.wikipedia.org/wiki/Snake_case)**.  
 Ví dụ : `first_name`, `last_name`.
-- Dùng tiếng anh để đặt tên, tên có tính tự giải thics,tránh việt viết tắt gây khó hiểu cho người đọc.   
+- Dùng tiếng anh để đặt tên, tên có tính tự giải thíc,tránh việc viết tắt gây khó hiểu cho người đọc.   
 Ví dụ : nên đặt tên `middle_name` thay vì `mid_nm`.  
 - Trong 1 số trường hợp từ quá dài, có thể sử dụng từ viết tắt phổ biến. 
 Nếu cảm thấy chưa rõ ràng thì không nên dùng từ viết tắt.  
 Ví dụ: [Internationalization và localization](https://en.wikipedia.org/wiki/Internationalization_and_localization) viết tắt thành `i18n` and `l10n`
 - Không dùng [từ khóa MySql](https://dev.mysql.com/doc/refman/5.7/en/keywords.html) và kiểu dữ liệu để đặt tên.  
-Ví dụ: `add`, `affter`, ...
+Ví dụ: `add`, `after`, ...
 - Tên cột không cần thêm các tiền tố không cần thiết.
 Ví dụ: Tên bảng `posts` không đặt `posts_title` mà chỉ cần `title`
 - Khi đánh Indexes thì cần đặt tên rõ ràng, bao gồm cả tên bảng và tên cột được đánh index
