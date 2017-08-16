@@ -1,7 +1,7 @@
 # PHP coding convention
 Mỗi ngôn ngữ đều có những chuẩn viết code riêng, với PHP thì chúng ta có PSR - PHP Standards Recommendation.
 Hiện tại thì đang có từ PSR-0 đến PSR-4 do các thành viên của nhóm [FIG(Framework Interop Group)](http://www.php-fig.org/) đề xuất. Chúng ta sẽ áp
- dụng chuẩn PSR-2 - Chuẩn viết code để áp dụng cho các project nên dưới đây sẽ đề cập đến các quy tắc theo chuẩn PSR-2 :
+ dụng chuẩn PSR-2 - Chuẩn viết code để áp dụng cho các project. Dưới đây là các quy tắc theo chuẩn PSR-2 :
 - Code phải tuân thủ theo [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md)
 - Sử dụng 4 khoảng trắng đê thụt đầu dòng thay vì dùng tab.
 - Kí tự tối đa trên 1 dòng không được vượt quá 120 kí tự, tốt nhất nên dưới 80 kí tự.
