@@ -2,7 +2,7 @@
 
 ### Mở đầu
 
-Phạm vi bài viết này chọn lọc những quy ước thường gặp nhất khi dùng Ruby trong software development. Có cả những quy ước chủ quan dựa trên kinh nghiệm của người viết và tham khảo các styleguide được đánh giá cao ở trên Github
+Phạm vi bài viết này chọn lọc những quy ước thường gặp nhất khi dùng Ruby trong software development. Có cả những quy ước chủ quan dựa trên kinh nghiệm của người viết và tham khảo các styleguide được đánh giá cao ở trên Github
 
 - [https://github.com/styleguide/ruby](https://github.com/styleguide/ruby)
 
