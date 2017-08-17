@@ -9,6 +9,7 @@ Hiện tại thì đang có từ PSR-0 đến PSR-4 do các thành viên của n
 - Thẻ đóng mở 1 function `{}` phải nằm trên từng dòng riêng biệt.
 - Trước thẻ đóng mở function `{}` không được có dòng trắng.
 - Khi khai báo `abstract` và `final` thì phải khai báo trước visibility còn `static` phải khai báo sau : 
+
 ```php
 <?php
 abstract protected function foo();
@@ -18,6 +19,7 @@ final public static function bar()
     // method body
 }
 ```
+
 - Sau từ khóa khiển khối (`if`, `else`, `elseif`, `for`, ...) phải có 1 khoảng trắng, sau method hoặc function không được có khoảng trắng.
 - Mở khối `{` cho cấu trúc điều khiển phải trên cùng một dòng và đóng khối này với `}`  ở dòng tiếp theo của thân khối.
 - Tất cả các file đều phải dử sụng Unix LF khi kết thúc 1 dòng.
@@ -33,6 +35,7 @@ final public static function bar()
 Nếu các tham số viết trên nhiều dòng thì mỗi dòng chỉ có 1 tham số.
 - Khi dùng `switch` thì `{` cùng trên 1 dòng, các `case` phải lùi 4 khoảng trắng, các action và từ khóa `break` phải lùi tiếp 4 khoảng trắng. 
 Phải comment `no break` trong trường hợp không dùng `break`
+
 ```php
 <?php
 switch ($expr) {
@@ -52,7 +55,9 @@ switch ($expr) {
         break;
 }
 ```
+
 - Đối với [`Closures`](http://php.net/manual/en/class.closure.php), sau khi khai báo các tham số phải có 1 khoảng trắng.
+
 ```php
 <?php
 $closureWithArgs = function ($arg1, $arg2) {
