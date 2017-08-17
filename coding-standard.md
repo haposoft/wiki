@@ -1,4 +1,6 @@
 # Coding Standard at Haposoft 
+## Git
+1. [Git & Git Flow](coding-standard/git.md)
 
 ## HTML&CSS
 6. [HTML&CSS coding convention](coding-standard/html-css.md)
