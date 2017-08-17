@@ -1,4 +1,4 @@
-# Git convention
+# Git & Git Flow
 
 ## Cơ bản:
 

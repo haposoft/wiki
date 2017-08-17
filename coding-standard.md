@@ -1,5 +1,5 @@
 # Coding Standard at Haposoft 
-
+## Git
 1. [Git & Git Flow](coding-standard/git.md)
 
 ## HTML&CSS
@@ -15,6 +15,10 @@
 4. [Ruby coding convention](coding-standard/ruby.md)
 5. [Ruby on Rails coding convention](coding-standard/ruby-on-rails.md)
 
-## Javascript & Nodejs
+## Javascript
 
 1. [Javascript coding convention](coding-standard/javascript.md)
+
+## Database
+
+1. [Database convention](coding-standard/database.md)
