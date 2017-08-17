@@ -1,5 +1,5 @@
 # Coding Standard at Haposoft 
-
+## Git
 1. [Git & Git Flow](coding-standard/git.md)
 
 ## HTML&CSS
