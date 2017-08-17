@@ -1,5 +1,5 @@
-#Các lệnh Git cơ bản
-##Config các thông tin Git
+# Các lệnh Git cơ bản
+## Config các thông tin Git
 Config tên user :  
 ```
 git config --global user.name "James Nguyen"
@@ -13,7 +13,7 @@ Hiển thị các config đang sử dụng:
 ```
 git config --list
 ```  
-##Khởi tạo hoặc clone 1 repository về máy
+## Khởi tạo hoặc clone 1 repository về máy
 Khởi tạo 1 repository từ thư mục code có sẵn
 ```
 cd your-project/
@@ -27,7 +27,7 @@ Clone 1 repository tại thư mục hiện tại
 ```
 git clone https://github.com/user/repository.git .
 ```
-###Thao tác với file
+### Thao tác với file
 Thêm file mới :
 ```
 git add file-name  
@@ -87,7 +87,7 @@ git reset origin/master
 git fetch origin
 git reset --hard origin/master
 ```
-###Thao tác với nhánh
+## Thao tác với nhánh
 Liệt kê các nhánh
 ```
 //trên local

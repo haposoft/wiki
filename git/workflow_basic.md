@@ -1,4 +1,4 @@
-#Workflow cơ bản của Git
+# Workflow cơ bản của Git
 Để bắt đầu làm việc với Git, nếu bạn là người start project thì bạn cần tạo 1 repository mới với:
 ```
 cd your-project/
