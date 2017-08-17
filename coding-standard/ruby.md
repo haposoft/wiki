@@ -2,7 +2,7 @@
 
 ### Mở đầu
 
-Phạm vi bài viết này chọn lọc những quy ước thường gặp nhất khi dùng Ruby trong software development. Có cả những quy ước chủ quan dựa trên kinh nghiệm của người viết và tham khảo các styleguide được đánh giá cao ở trên Github
+Phạm vi bài viết này chọn lọc những quy ước thường gặp nhất khi dùng Ruby trong software development. Có cả những quy ước chủ quan dựa trên kinh nghiệm của người viết và tham khảo các styleguide được đánh giá cao ở trên Github
 
 - [https://github.com/styleguide/ruby](https://github.com/styleguide/ruby)
 
@@ -25,11 +25,11 @@ a, b = 1, 2
 - Không sử dụng dấu space sau `(`, `[` và trước `]`, `)`
 
 ```ruby
-method_call(arg),other
+method_call(arg).other
 [1, 2, 3].length
 ```
 
-- Không sử dụng space sau `!`
+- Không sử dụng space sau `!`
 
 ```ruby
 !array.include? element
@@ -97,7 +97,7 @@ def send_mail(source)
 
 ### Loop
 
-- Sử dụng loop với `each` thay cho `for`:
+- Sử dụng loop với `each` thay cho `for`:
 
 ```ruby
 arr = [1, 2, 3]
@@ -113,7 +113,7 @@ arr.each { |elem| puts elem }
 
 Nguyên nhân là do biến `elem` được truyền trong `scope` nên sẽ không có thể gọi được từ bên ngoài nữa
 
-- Không sử dụng `while/until condition do` cho multiline mà chỉ là `while/until`
+- Không sử dụng `while/until condition do` cho multiline mà chỉ là `while/until`
 
 ```ruby
 # bad
@@ -147,7 +147,7 @@ end
 do_something while some_condition
 ```
 
-- Với loop vô hạn thì sử dụng `Kernel#loop`
+- Với loop vô hạn thì sử dụng `Kernel#loop`
 
 ```ruby
 # bad
@@ -167,7 +167,7 @@ end
 
 ### Conditional Syntax
 
-- Không sử dùng keyword `then` ở câu điều kiện `if/unless`
+- Không sử dùng keyword `then` ở câu điều kiện `if/unless`
 
 ```ruby
 # Bad
@@ -214,7 +214,7 @@ end
 do_something if some_condition
 ```
 
-- Mệnh đề phủ định thì hãy sử dụng `unless` thay vì `!`
+- Mệnh đề phủ định thì hãy sử dụng `unless` thay vì `!`
 
 ```ruby
 # Bad
@@ -242,7 +242,7 @@ else
 end
 ```
 
-- Không cần dấu `()` ở mệnh đề `if/unless/while`
+- Không cần dấu `()` ở mệnh đề `if/unless/while`
 
 ```ruby
 # Bad
@@ -275,7 +275,7 @@ if v == 'hello' ...
 
 ### Strings
 
-- Sử dụng String Interpolation thay cho nối chuỗi
+- Sử dụng String Interpolation thay cho nối chuỗi
 
 ```ruby
 # bad
@@ -295,7 +295,7 @@ name = 'Bozhidar'
 name = "Bozhidar"
 ```
 
-- Sử dụng `heredoc` nếu muốn khai báo Multiple Lines String
+- Sử dụng `heredoc` nếu muốn khai báo MultipleLines String
 
 ```ruby
 str <<-HEREDOC
@@ -405,7 +405,7 @@ def some_method(some_arr)
 end
 ```
 
-- Với các giá trị mặc định của tham số hàm, thì cần thêm space quanh dấu `=`
+- Với các giá trị mặc định của tham số hàm, thì cần thêm space quanh dấu `=`
 
 ```ruby
 # Bad
@@ -417,7 +417,7 @@ def some_method(arg1 = :default, arg2 = nil, arg3 = [])
 end
 ```
 
-- Tránh sử dụng one-line method
+- Tránh sử dụng one-line method
 
 ```ruby
 # Bad
@@ -449,7 +449,7 @@ enabled = true if enabled.nil?
 
 ### Array, Hash
 
-- Nếu khai báo mảng String thì sử dụng `%w` được thích hơn
+- Nếu khai báo mảng String thì sử dụng `%w` được thích hơn
 
 ```ruby
 # bad
@@ -459,7 +459,7 @@ STATES = ["draft", "open", "closed"]
 STATES = %w(draft open closed)
 ```
 
-- Ruby 1.9 trở đi thì `Hash` sử dụng ký pháp mới 
+- Ruby 1.9 trở đi thì `Hash` sử dụng ký pháp mới 
 
 ```ruby
 # Bad
@@ -469,13 +469,13 @@ hash = { :one => 1, :two => 2 }
 hash = { one: 1, two: 2 }
 ```
 
-- Access phần tử đầu và cuối của Array thì dùng `first` và `last` thay vì `[0]` hay `[1]`
+- Access phần tử đầu và cuối của Array thì dùng `first` và `last` thay vì `[0]` hay `[1]`
 
-### Keyword Arguments
+### Keyword Arguments
 
 [Keyword Arguments](http://magazine.rubyist.net/?Ruby200SpecialEn-kwarg) là tính năng từ Ruby 2.0 cho phép truyền 1 hash các option vào làm arguments của method.
 
-Thay vì sử dụng
+Thay vì sử dụng
 
 ```ruby
 def remove_member(user, skip_membership_check=false)
@@ -496,7 +496,7 @@ remove_member user, skip_membership_check: true
 
 ### Lambda
 
-- Ruby 1.9 thì `lambda` sử dụng cú pháp `literal`
+- Ruby 1.9 thì `lambda` sử dụng cú pháp `literal`
 
 ```ruby
 # Bad
@@ -510,7 +510,7 @@ lambda.(1, 2)
 
 ### Numbers
 
-- Sử dụng `range` nếu muốn tìm số random
+- Sử dụng `range` nếu muốn tìm số random
 
 ```ruby
 # bad
@@ -621,9 +621,9 @@ class FooError < StandardError; end
 ### Rules đặt tên
 
 - Tên biến và tên method dùng `snake_case`
-- Tên Class và Module sử dụng `CamelCase`
+- Tên Class và Module sử dụng `CamelCase`
 - Hằng số sử dụng `SCREAMING_SNAKE_CASE`
-- Với các hàm trả về với giá trị Boolean, giống như `Array#empty?`, tên hàm cần thêm dấu `?` ở cuối
+- Với các hàm trả về với giá trị Boolean, giống như `Array#empty?`, tên hàm cần thêm dấu `?` ở cuối
 - Những method ghi đè phá huỷ `self` thì thêm `!` ở cuối tên hàm
 
 ```ruby
@@ -656,7 +656,7 @@ fail SomeException, 'message'
 raise SomeException, 'message'
 ```
 
-- Sử dụng exception với class và message như 2 tham số với `raise` thay vì sử dụng Exceprion Instance
+- Sử dụng exception với class và message như 2 tham số với `raise` thay vì sử dụng Exceprion Instance
 
 ```ruby
 # bad
@@ -690,7 +690,7 @@ end
 
 ### Comments
 
-- Sử dụng 1 dấu space sau `#`
+- Sử dụng 1 dấu space sau `#`
 - Tránh comment dư thừa
 
 ```ruby
@@ -701,6 +701,6 @@ counter += 1 # Increments counter by one.
 - Comment cũng cần được update với code, nếu comment không update cùng với xử lý thì thà không viết còn hơn
 
 - Sử dụng 1 số anotation để đánh dấu khi cần thiết
-  - `TODO`: note lại các tính năng chưa hoàn thành cần làm sau
+  - `TODO`: note lại các tính năng chưa hoàn thành cần làm sau
   - `FIXME`: note lại lỗi đang tồn tại, cần sửa
   - `OPTIMIZE`: note lại vị trí xử lý chậm ảnh hưởng tới hiệu năng
