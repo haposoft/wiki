@@ -31,6 +31,7 @@ const itemsCopy = [...items];
 - Khi biến `string` 1 dòng không quá 100 kí tự.
 - Sử dụng `Array#join` để nối chuối trong mảng
 - Khi nối text với 1 biến sử dụng [`prefer-template`](http://eslint.org/docs/rules/prefer-template.html)
+
 ```javascript
 function sayHi(name) {
   return `How are you, ${name}?`;
@@ -40,6 +41,7 @@ function sayHi(name) {
 - Khai báo biến là element html thêm `$` trước tên biến : `let $sidebar = $('.sidebar');`
 - Khai báo biến đều bắt đầu bằng từ khóa tương ứng, không sử dụng `,` để khai báo nhiều biến
 - Những biết cùng dạng thì khai báo cùng nhau
+
 ```javascript
 const goSportsTeam = true;
 const items = getItems();
@@ -56,6 +58,7 @@ let length;
 - Khi đặt tên biến cho các element với jQuery thêm `$` vào trước tên biến : `let $sidebar = $('.sidebar');`
 - Khi comment nhiều dòng dùng `/** ... */`
 - Khi comment 1 dòng dùng `//` và comment vào 1 dòng mới. Bên trên phải là 1 dòng trắng
+
 ```javascript
 function getType() {
   console.log('fetching type...');
@@ -73,6 +76,7 @@ function getType() {
 - Khai báo function `{` phải cùng dòng với tên function
 - Khai báo function sau `()` phải có 1 khoảng trắng trước `{`
 - Không khai báo function trong 1 block, nếu khai báo trong 1 block thì phải gán cho 1 biến
+
 ```javascript
 let test;
 if (currentUser) {
@@ -81,7 +85,9 @@ if (currentUser) {
   };
 }
 ```
+
 - Khi function có tham số có giá trị mặc định luôn để ở dưới cùng
+
 ```javascript
 // good
 function handleThings(name, opts = {}) {
@@ -96,6 +102,7 @@ function handleThings(name, opts = {}) {
 - Kết thúc 1 block phải có 1 dòng trắng
 - Trước và sau các toán tử (= + - * / ) phải có 1 khoảng trắng
 - Nếu array có nhiều dòng, trước và sau array có 1 dòng trắng
+
 ```javascript
 const arr = [[0, 1], [2, 3], [4, 5]];
 
@@ -105,12 +112,12 @@ const objectInArray = [
   },
   {
     id: 2,
-  },
+  }
 ];
 
 const numberInArray = [
   1,
-  2,
+  2
 ];
 ```
 
@@ -118,6 +125,7 @@ const numberInArray = [
 
 - Sử dụng `===` và `!==` thay vì dùng `==` và `!=`
 - Khi check `booleans` dùng các biểu thức rút gọn : 
+
 ```javascript
 // bad
 if (isValid === true) {
