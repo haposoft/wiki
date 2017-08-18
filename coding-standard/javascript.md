@@ -9,7 +9,8 @@
 - Khai báo object dùng `{}` không sử dụng `new Object()`
 - Khai báo array dùng `[]` không sử dụng `new Array()`
 - Không sử dụng các [reserved words](http://es5.github.io/#x7.6.1) cho các key của Object
-- Khi thêm phần tử vào mảng dùng `push()` không dùng `index` của array
+- Khi thêm phần tử vào mảng dùng `push()` không dùng `index` của array  
+
 ```javascript
 // bad
 users[users.length] = 'new user';
@@ -17,6 +18,7 @@ users[users.length] = 'new user';
 // good
 users.push('new user');
 ```
+
 - Khi muốn copy một array dùng `...`
 
 ```javascript
