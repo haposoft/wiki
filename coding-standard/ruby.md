@@ -50,7 +50,7 @@ else
 end
 ```
 
-- Sử dụng các toán tử gán thay nếu có thể
+- Sử dụng các toán tử gán nếu có thể
 
 ```ruby
 x = x + y
@@ -621,7 +621,7 @@ class FooError < StandardError; end
 ### Rules đặt tên
 
 - Tên biến và tên method dùng `snake_case`
-- Tên Class và Module sử dụng `CamelCase`
+- Tên Class và Module sử dụng `PascalCase`
 - Hằng số sử dụng `SCREAMING_SNAKE_CASE`
 - Với các hàm trả về với giá trị Boolean, giống như `Array#empty?`, tên hàm cần thêm dấu `?` ở cuối
 - Những method ghi đè phá huỷ `self` thì thêm `!` ở cuối tên hàm
