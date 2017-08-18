@@ -18,6 +18,7 @@ users[users.length] = 'new user';
 users.push('new user');
 ```
 - Khi muốn copy một array dùng `...`
+
 ```javascript
 const itemsCopy = [...items];
 ```
