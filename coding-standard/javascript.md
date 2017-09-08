@@ -2,6 +2,7 @@
 ### File  
 
 - Khi đặt tên file chỉ được dùng **lowercase**, dùng dấu `-` để nối các từ trong tên file.
+- Tên file với đuôi mở rộng sẽ để dấu `.` ngăn cách. Ví dụ `.env.example` thay vì đặt là `.env-example`
 - File Encoding phải là **UTF-8**
 
 ### Object, Array
