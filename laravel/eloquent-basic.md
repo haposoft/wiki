@@ -295,7 +295,7 @@ $deletedRows = App\Flight::where('active', 0)->delete();
 
 <a name="soft-deleting"></a>
 ### Soft deleting
-Thay vì thực sự xoá các bản ghi khỏi database, Eloquent cũng cung cấp kiểu "soft delete" (xoá mềm) model. Khi model được soft deleted, chúng được thêm một trường là deleted_at trong database. Để kích hoạt `Soft Delete` cho một model, sử dụng trait `Illuminate\Database\Eloquent\SoftDeletes` trên model và thêm vào cột `deleted_at` vào trong thuộc tính `$dates` của model:
+Thay vì thực sự xoá các bản ghi khỏi database, Eloquent cũng cung cấp kiểu `soft delete` (xoá mềm). Khi 1 model sử dụng `soft delete`, chúng được thêm một trường là deleted_at trong database table. Để kích hoạt `Soft Delete` cho một model, sử dụng trait `Illuminate\Database\Eloquent\SoftDeletes` trên model và thêm vào cột `deleted_at` vào trong thuộc tính `$dates` của model:
 
 ```php
 class Flight extends Model
@@ -339,7 +339,7 @@ $flights = App\Flight::withTrashed()
                 ->where('account_id', 1)
                 ->get();
 ```
-#### Chỉ lấy các soft deleted records vào kết quả
+#### Chỉ lấy các soft deleted records
 
 ```php
 $flights = App\Flight::onlyTrashed()
