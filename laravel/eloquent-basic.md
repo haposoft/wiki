@@ -318,9 +318,9 @@ Schema::table('flights', function ($table) {
     $table->softDeletes();
 });
 ```
-Khi 1 model được set `Soft Delete`, khi bạn gọi hàm delete trên model, cột `deleted_at` sẽ được set vào `current datetime`. Và khi thực hiện query trên một model có sử dụng `soft delete`, thì model đó sẽ tự động bị loại khỏi tất cả các kết quả query.
+Khi 1 model được set `Soft Delete`, khi bạn gọi hàm `delete()`, cột `deleted_at` sẽ được gán giá trị `current datetime (thời gian hiện tại)`. Và khi thực hiện query, các bản ghi đã được `soft deleted` sẽ tự động bị loại khỏi tất cả các kết quả query.
 
-Để xác định nếu một model instance bị `soft delete`, sử dụng hàm `trashed()`:
+Để xác định nếu một model instance đã bị `soft delete` hay chưa, sử dụng hàm `trashed()`:
 
 ```php
 if ($flight->trashed()) {
@@ -332,7 +332,7 @@ if ($flight->trashed()) {
 ### Thực hiện query các soft deleted records
 
 #### Thêm các soft delete model vào kết quả
-Bạn có thể làm các model đã soft delete xuất hiện trên tập kết quả bằng cách sử dụng hàm `withTrashed()`:
+Bạn có thể làm các bản ghi đã soft delete xuất hiện trên tập kết quả bằng cách sử dụng hàm `withTrashed()`:
 
 ```php
 $flights = App\Flight::withTrashed()
