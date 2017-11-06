@@ -1,4 +1,4 @@
-###1.Tổng quan
+### 1.Tổng quan
 * [Blade](https://laravel.com/docs/master/blade) là một khuôn mẫu (template) đơn giản, mạnh mẽ được cung cấp bởi Laravel
 * Không giống như những template PHP khác, blade không giới hạn việc sử dụng code PHP trong views  
 * Các file Blade sử dụng phần mở rộng là `blade.php` và được đặt ở trong thư mục `resources/views   
