@@ -42,7 +42,7 @@ VD: File `child.blade.php` sẽ kế thừa `layouts.blade.php`
 ```
 * Ở đây `@parent` nhằm viết tiếp section `sidebar` chứ không ghi đè nó
 * Có 2 cách đóng `@section` đó là `@endsection` và `@show`, trong đó `@section`
-đơn thuần là đóng section còn `@show` sẽ đóng và thực hiện `@yield` section đó
+đơn thuần là đóng section còn `@show` sẽ đóng và thực hiện đánh dấu section đó bằng `@yield`
 ### 3. Hiển thị dữ liệu
 * Để hiển thị dữ liệu ra view, chúng ta sử dụng cặp ngoặc nhọn `{{}}`  
 VD: Ta có route như sau
