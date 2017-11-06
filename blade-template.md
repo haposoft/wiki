@@ -1,7 +1,7 @@
 ### 1.Tổng quan
 * [Blade](https://laravel.com/docs/master/blade) là một khuôn mẫu (template) đơn giản, mạnh mẽ được cung cấp bởi Laravel
-* Không giống như những template PHP khác, blade không giới hạn việc sử dụng code PHP trong views  
-* Các file Blade sử dụng phần mở rộng là `blade.php` và được đặt ở trong thư mục `resources/views   
+* Không giống như những template PHP khác (Twig, etc..), blade không giới hạn việc sử dụng code PHP trong views  
+* Các file Blade sử dụng phần mở rộng là `blade.php` và được đặt ở trong thư mục `resources/views`   
 ### 2.Thừa kế views  
 * Đây là một ưu điểm lớn trong việc sử dụng Blade template  
 * Khi sử dụng một template engine thì việc tái sử dụng lại layout là vô cùng quan trọng, điều này khiến chúng ta tránh được việc lặp code và có thể dễ dàng nâng cấp hoặc bảo trì
