@@ -1,8 +1,8 @@
-### 1.Tổng quan
+### 1. Tổng quan
 * [Blade](https://laravel.com/docs/master/blade) là một khuôn mẫu (template) đơn giản, mạnh mẽ được cung cấp bởi Laravel
 * Không giống như những template PHP khác (Twig, etc..), blade không giới hạn việc sử dụng code PHP trong views  
 * Các file Blade sử dụng phần mở rộng là `blade.php` và được đặt ở trong thư mục `resources/views`   
-### 2.Thừa kế views  
+### 2. Thừa kế views  
 * Đây là một ưu điểm lớn trong việc sử dụng Blade template  
 * Khi sử dụng một template engine thì việc tái sử dụng lại layout là vô cùng quan trọng, điều này khiến chúng ta tránh được việc lặp code và có thể dễ dàng nâng cấp hoặc bảo trì
 #### a. Khởi tạo layout
@@ -25,7 +25,7 @@
 
 * `@yield` sẽ khai báo nơi để hiển thị dữ liệu
 * `@section` là khu vực để hiển thị dữ liệu (tức là nội dung trong `@yield`), mỗi section được bắt đầu bởi `@section('ten-section')` và kết thúc bởi `@endsection`   
-#### b. Thừa kế layout  
+#### b. Kế thừa layout  
 * Để một view kế thừa một view khác, chúng ta sử dụng `@extends('ten-view')`  
 * Để sử dụng một view, ta dùng `@include('ten-view')`  
 VD: File `child.blade.php` sẽ kế thừa `layouts.blade.php`  
@@ -42,7 +42,7 @@ VD: File `child.blade.php` sẽ kế thừa `layouts.blade.php`
 ```
 * Ở đây `@parent` nhằm viết tiếp section `sidebar` chứ không ghi đè nó
 * `@endsection` sẽ chỉ định nghĩa section còn `@show` sẽ lập tức yield section đó
-### 3.Hiển thị dữ liệu
+### 3. Hiển thị dữ liệu
 * Để hiển thị dữ liệu ra view, chúng ta sử dụng cặp ngoặc nhọn `{{}}`  
 VD: Ta có route như sau
 ```
