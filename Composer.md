@@ -1,5 +1,5 @@
 ##1. Composer là gì
-[Composer](https://getcomposer.org/) là công cụ để quả lý package hay library PHP.  
+[Composer](https://getcomposer.org/) Là công cụ để quản lý package hay library PHP.  
 Composer sẽ cài đặt những libraries vào một thư mục nào đó nằm bên trong project bạn đang làm việc.  
 Về cơ cản, Composer sẽ không cài đặt global, chính vì thế nó còn được gọi là Dependency Manager.  
 (Những package được cài đặt được gọi là Dependency, còn Composer là công cụ quản lý các Dependency)  
