@@ -21,7 +21,7 @@
 <a name="basics"></a>
 ## 1. Cơ bản
 
-Hầu hết các route cơ bản trong Laravel nhận tham số là 1 URI và 1 `Closure`
+Hầu hết các route cơ bản trong Laravel nhận tham số là 1 URI và 1 [`Closure`](http://php.net/manual/en/class.closure.php)
 
 ```php
 Route::get('foo', function () {
