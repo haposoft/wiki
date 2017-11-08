@@ -167,11 +167,12 @@ $flight = App\Flight::where('active', 1)->first();
 // Trường hợp primary key là nhiều trường, sử dụng mảng các primary key
 $flight = App\Flight::find([1, 2, 3]);
 
-// Lấy về bản ghi đầu tiên hoặc trả về lỗi nếu thất bại
+// Lấy về bản ghi đầu tiên hoặc trả về 1 Exception nếu thất bại
 $model = App\Flight::findOrFail(1);
 $model = App\Flight::where('legs', '>', 100)->firstOrFail();
-
 ```
+> Exception do `findOrFail` và `firstOrFail` trả về là 1 instance của `Illuminate\Database\Eloquent\ModelNotFoundException`, nếu Exception này không được `catch`, một `404 status response` sẽ được trả về cho user. Vì thế bạn không bắt buộc phải kiểm tra để return `404` status khi dùng các hàm này 
+
 - *Hàm trên tập hợp*: `sum`, `avg`, `max`, ...
 
 ```php
@@ -195,7 +196,7 @@ public function store(Request $request)
         $flight->save();
     }
 ```
-> Các trường `created_at` và `updated_at` được tự động thêm vào khi sử dụng hàm `save()`
+> Nếu đã được khai báo trong db, các trường `created_at`(khi tạo mới) và `updated_at` của bảng được tự động thêm vào giá trị `current Datetime (thời gian hiện tại)` khi sử dụng hàm `save()`
 
 Nếu bản ghi đã tồn tại trong DB, hàm `save()` cũng có thể dc dùng để update dữ liệu đó:
 
