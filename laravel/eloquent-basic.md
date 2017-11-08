@@ -235,9 +235,12 @@ class Flight extends Model
 // Somewhere, ex: FlightController
 $flight = App\Flight::create(['name' => 'Flight 10']);
 ```
-Nếu đã khởi tạo một đối tượng của Model, có thể sử dụng hàm fill để lưu vào DB
+Nếu đã khởi tạo một đối tượng của Model, có thể sử dụng hàm `fill()` để gán giá trị các trường của Model instance thông qua 1 mảng, chỉ những trường khai báo trong `fillable` được gán giá trị.
 ```php
 $flight->fill(['name' => 'Flight 22']);
+
+// Lưu vào DB
+$flight->save();
 ```
 > Ngược lại với `fillable` là `guarded`, những trường được khai báo trong `guarded` không được lưu vào DB. Bạn chỉ nên sử dụng 1 trong 2 thuộc tính này.
 
