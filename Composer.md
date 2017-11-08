@@ -1,13 +1,13 @@
-##1. Composer là gì
+## 1. Composer là gì
 [Composer](https://getcomposer.org/) Là công cụ để quản lý package hay library PHP.  
 Composer sẽ cài đặt những libraries vào một thư mục nào đó nằm bên trong project bạn đang làm việc.  
 Về cơ cản, Composer sẽ không cài đặt global, chính vì thế nó còn được gọi là Dependency Manager.  
 (Những package được cài đặt được gọi là Dependency, còn Composer là công cụ quản lý các Dependency)  
 Composer tương tự bundler của Ruby hay npm của NodeJS
-##2. Cách cài đặt
+## 2. Cách cài đặt
 Composer phiên bản hiện tại yêu cầu phiên bản PHP >= 5.3.2  
 Thông tin chi tiết về hướng dẫn cài đặt Composer có thể xem ở [đây](https://getcomposer.org/download/)
-##3. Composer.json và composer.lock
+## 3. Composer.json và composer.lock
 `composer.json` : Là nơi ta khai báo những dependencies dùng trong project, những thông tin về tên, phiên bản, licenses, source … Nội dung được viết theo JSON format.  
 VD:  
  
@@ -28,12 +28,12 @@ VD:
     }
     
  `composer.lock` : Là nơi lưu trữ thông tin về dependencies đã được cài đặt. Ví dụ khi bạn dùng lệnh install để cài đặt lần đầu thì composer sẽ đọc thông tin về dependencies ở trong file composer.json, sau đó cài đặt và tạo ra file composer.lock để lưu thông tin cụ thể về những dependencies đó  
- ##4. Packagist
+ ## 4. Packagist
  [Packagist]( https://packagist.org): Là repository chính để lưu những thông tin về composer package  
  Đây là nơi ta có tìm kiếm những library cần thiết và cài đặt chúng một cách nhanh chóng và dễ dàng thông qua composer
-##5. Các câu lệnh của Composer
+## 5. Các câu lệnh của Composer
 
-###a. Các Global Option
+### a. Các Global Option
 `verbose (-v)` : Hiện message dài  
 `help (-h)` : Hiện thông tin help  
 `quiet (-q)` : Không xuất ra message gì trong khi chạy câu lệnh  
@@ -44,7 +44,7 @@ VD:
 `no-ansi` : Dừng việc xuất kết quả với encoding là ANSI  
 `version (-V)` : Hiển thị version hiện tại của Composer  
 
-###b. Các local Option
+### b. Các local Option
 `init` : Tạo ra file composer.json nhằm khai báo các thông tin cho package  
 `install` : Đọc thông tin từ file composer.json tại thư mục đang đứng, tổng hợp các package cần cài đặt, và cài đặt chúng vào một thư mục nào đó bên trong project.  
 `update` : Update những dependencies đã được cài đặt lên version mới nhất, đồng thời update nội dung vào file composer.lock  
