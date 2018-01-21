@@ -6,9 +6,9 @@
 
 ### Không tốt 
 ```
-    #some-body {
-      // ...
-    }
+#some-body {
+  // ...
+ }
 ```
  
 ### Tốt
