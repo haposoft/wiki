@@ -5,9 +5,11 @@
 * Không dùng ID làm selector
 
 ### Không tốt 
-    #some-body {
-      // ...
-    }
+```
+#some-body {
+  // ...
+ }
+```
  
 ### Tốt
     .some-body {
