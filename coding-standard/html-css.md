@@ -1,13 +1,13 @@
 # HTML&CSS coding convention
-#HTML Convention
+# HTML Convention
 
-##Tất cả các thẻ (tags) phải là chữ thường
+## Tất cả các thẻ (tags) phải là chữ thường
 ```
 <table></table>
 <form></form>
 ```
 
-###Sử dụng tên ý nghĩa khi đặt cho ID và các phần tử HTML
+### Sử dụng tên ý nghĩa khi đặt cho ID và các phần tử HTML
 ```
 txtName, txtAge
 ```
@@ -16,7 +16,7 @@ thay vì
 text1, text2
 ```
 
-###Indent HTML code consistently (Thụt lề cho mã HTML)
+### Indent HTML code consistently (Thụt lề cho mã HTML)
 ```
 <body>
     <form name="frmActivity" method="post" action="<?php echo $formAction;?>">
@@ -31,7 +31,7 @@ text1, text2
 </body>
 ```
 
-###Không sử dụng inline style attributes
+### Không sử dụng inline style attributes
 Hạn chế sử dụng nó càng ít càng tốt, điều này có những lợi thế sau: 
 - Có thể dễ dàng chỉnh sửa giao diện cho mã HTML 
 - Có thể kế thừa CSS nếu bạn muốn sử dụng lại nó ở 1 nơi khác.
@@ -44,9 +44,9 @@ Hạn chế sử dụng nó càng ít càng tốt, điều này có những lợ
 <div class="message">
 ```
 
-###Sử dụng 1 file CSS riêng không đặt trong trang HTML
+### Sử dụng 1 file CSS riêng không đặt trong trang HTML
 
-###Tuân thủ W3C validate
+### Tuân thủ W3C validate
 - Việc này giúp website của bạn tối ưu được các đoạn mã HTML và hỗ trợ cho SEO
 - Có thể check W3C validate trên trang https://validator.w3.org/
 
@@ -179,10 +179,10 @@ Hạn chế sử dụng nó càng ít càng tốt, điều này có những lợ
       }
     }
 
-###Đặt tên cho class
+### Đặt tên cho class
 - Khi đặt tên cho class theo cấu trúc `[Tên viết tắt của dự án]-[Chức năng của section]`
 
-###Phân chia section rõ ràng
+### Phân chia section rõ ràng
 - Phân chia section rõ ràng với từng chức năng của nó
 
 Đặt tên class theo chức năng và hướng tới "Đối tượng"

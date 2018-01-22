@@ -100,6 +100,7 @@ function handleThings(name, opts = {}) {
 ```
 
 ### Khoảng trắng
+
 - Sử dụng 2 khoảng trắng tương ứng với 1 tab
 - Sau các từ khóa `if`, `while`, `do`, ... phải có 1 khoảng trắng
 - Trước và sau các biến có khoảng trắng
