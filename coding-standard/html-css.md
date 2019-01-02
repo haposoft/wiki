@@ -35,12 +35,13 @@ text1, text2
 Hạn chế sử dụng nó càng ít càng tốt, điều này có những lợi thế sau:
 - Có thể dễ dàng chỉnh sửa giao diện cho mã HTML
 - Có thể kế thừa CSS nếu bạn muốn sử dụng lại nó ở 1 nơi khác.
+
 ```
 // INSTEAD OF
-<div style="width:100px;align:center;">
+<div style="width:100px;align:center;">...</div>
 
 // USE
-<div class="message">
+<div class="message">...</div
 ```
 
 ###Sử dụng 1 file CSS riêng không đặt trong trang HTML
