@@ -107,8 +107,6 @@ Xem thêm tại [Defining Relationships](https://laravel.com/docs/master/eloquen
  
 ## **6. Tên biến**
 
-### **a, Tên biến**
-
 - Tên biến bằng tiếng Anh, được đặt ngắn ngọn dễ hiểu.
 - Tên biến bắt buộc phải ở dạng `camelCase`. Ví dụ: `$user`, `$projectBudget`.
 - Tên biến của 1 array hay collection của các object phải đặt ở dạng số nhiều.
