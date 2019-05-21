@@ -1,4 +1,4 @@
-#Laravel naming conventions
+# Laravel naming conventions
 
 Laravel tuân thủ theo chuẩn PSR-2(coding standard) và PSR-4(autoloading standard).
 
