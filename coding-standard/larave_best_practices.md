@@ -82,8 +82,7 @@ class PostRequest extends Request
 ### **Don't repeat yourself (DRY)**
 
 Khi có các đoạn code xử lý mà bị lặp lại từ 2 lần trở lên cần xem xét lại để viết code sao cho có thể thể dễ dàng tái 
-sử dụng, tránh việc lặp code.
-Bằng cách tận dụng sức mạnh của [Blade Templates](https://laravel.com/docs/master/blade),
+sử dụng, tránh việc lặp code. Có thể tận dụng sức mạnh của [Blade Templates](https://laravel.com/docs/master/blade),
 [Eloquent scopes](https://laravel.com/docs/master/eloquent#query-scopes),...
 
 ```php
