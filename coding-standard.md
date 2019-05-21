@@ -12,6 +12,7 @@
 
 1. [PHP coding convention](coding-standard/php.md)
 2. [Laravel coding convention](coding-standard/laravel.md)
+3. [Laravel best practices](coding-standard/laravel_best_practices.md)
 
 ## Ruby 
 
