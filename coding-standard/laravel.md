@@ -94,7 +94,7 @@ Xem thêm tại [Defining Relationships](https://laravel.com/docs/master/eloquen
 
 ### **a, Thư mục**
 
-- Đặt tên thư theo dạng `snake_case` và ở dạng số nhiều. Ví dụ như`views`, `image_files`
+- Đặt tên thư theo dạng `snake_case` và ở dạng số nhiều. Ví dụ: `views`, `image_files`
 
 ### **b, View**
 
