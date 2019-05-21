@@ -22,7 +22,8 @@ Route('/users/download-file', [
 ```php
 Route::group(['prefix' => 'projects', 'as' => 'projects.'], function () {
             Route::get('/', ['as' => 'index', 'uses' => 'ProjectController@index']);
-            Route::post('/create', ['as' => 'create', 'uses' => 'ProjectController@create']);
+            Route::get('/create', ['as' => 'create', 'uses' => 'ProjectController@create']);
+            ...
 ```
 Xem thêm tại:  [Route group document](https://laravel.com/docs/5.5/routing#route-groups) 
 
