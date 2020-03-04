@@ -44,7 +44,7 @@
       // ...
     }
 
-* Sau `:` phải có khoảng trắng ` `
+* Sau `:` phải có khoảng trắng  
 
 ### Không tốt 
     .selector{
@@ -91,7 +91,7 @@
 
 # SCSS 
 
-* SCSS selector tối đa 3 lever 
+* SCSS selector tối đa 3 level 
 
 ### Tốt 
 
@@ -128,9 +128,9 @@
     }
 
 #Đặt tên cho class
-- Khi đặt tên cho class theo cấu trúc `[Tên viết tắt của dự án]-[Chức năng của section]`
+* Khi đặt tên cho class theo cấu trúc `[Tên viết tắt của dự án]-[Chức năng của section ]`
 
 #Phân chia section rõ ràng
-- Phân chia section rõ ràng với từng chức năng của nó
+* Phân chia section rõ ràng với từng chức năng của nó
 
-Đặt tên class theo chức năng và hướng tới "Đối tượng"
+* Đặt tên class theo chức năng và hướng tới "Đối tượng"
