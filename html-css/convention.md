@@ -75,6 +75,18 @@
       width:100%;
     }
 
+* Không sử dụng camelCase(kiểu viết hoa chữ cái đầu tiên của mỗi từ) để đặt tên cho class
+
+### Không tốt 
+    .navToOneModuleICreated {
+      font-size: 2em;
+    }
+
+### Tốt 
+    .nav-to-one-module-i-created {
+      font-size: 2em;
+    }
+
 * Khi comment code nên dùng `//`
 * Đặt class riêng cho JS, sử dụng tiền tố `js-`
 * Khi sử dụng Border `0` thay vì `none`
