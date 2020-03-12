@@ -75,7 +75,7 @@
       width:100%;
     }
 
-* Không sử dụng camelCase(kiểu viết hoa chữ cái đầu tiên của mỗi từ) để đặt tên cho class
+* Không sử dụng .camelCase(kiểu viết hoa chữ cái đầu tiên của mỗi từ) mà nên sử dụng .kebab-case(kiểu các chữ viết thường và ngăn cách với nhau bằng dấu gạch ngang '-') để đặt tên cho class
 
 ### Không tốt 
     .navToOneModuleICreated {
