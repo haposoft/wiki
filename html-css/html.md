@@ -16,6 +16,9 @@ text1, text2
 ```
 
 ###Indent HTML code consistently (Thụt lề cho mã HTML)
+
+* Sử dụng 4 khoảng trắng 
+
 ```
 <body>
     <form name="frmActivity" method="post" action="<?php echo $formAction;?>">
