@@ -37,3 +37,5 @@
 * [Object Cloning](./PHP/ObjectCloning.md)
 * [Autoloading Classes or Classes on Demand](./PHP/AutoloadingClasses.md)
 * [Method Chaining](./PHP/MethodChaining.md)
+* [Dependency Injection](./PHP/DependencyInjection.md)
+* [Classes, Properties, Methods](./PHP/Classes-Properties-Methods.md)
